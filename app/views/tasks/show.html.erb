@@ -1,1 +1,8 @@
-<p>tu es bien dans le show tai de zbob</p>
+<h1>tu es bien dans le show tai de zbob</h1>
+<h2><%= @task.title %></h2>
+<h2><%= @task.details %></h2>
+<%= link_to "Update the task", edit_task_path %>
+<br>
+<%= link_to "Prout", task_path(@task), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
+<br>
+<%= link_to "retour à l'accueil", tasks_path %>
